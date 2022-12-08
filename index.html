@@ -51,21 +51,22 @@
         style="display:none;visibility:hidden"></iframe>
 </noscript>
    
-    <iframe class="audio" loop autoplay style = "display:none;">
+    <!-- <iframe class="audio" loop autoplay style = "display:none;">
         <source src="./song.2mp3" type="audio/mpeg">
-    </iframe>
-    <audio autoplay loop  id="audio">
+    </iframe> -->
+    <audio  loop id="audio">
         <source src="./song2.mp3" type="audio/mpeg">
     </audio>
-    <script>document.getElementById("audio").play()</script>
+    <script>function myFunction () {document.getElementById("audio").play(); document.getElementById("loader").style = "display:none"; }</script>
     <div>
 
 </div>
 <!-- <embed src="./song.mp3" type="audio/mp3" autostart="true" hidden="true">
     <audio id="player" autoplay controls><source src="./song.mp3" type="audio/mp3"></audio> -->
-    <div id="loading" style="display:block;">
+    <div class="loader" id="loader" style="display:block;">
       <img class="image-loader" src="./invitation.png"/>
-      
+     
+      <button id="myBtn" onclick="myFunction()" class="btnn">Invitation</button>
     <!-- <img class="image-loader" src="https://cdn.weddingwishlist.com/images/website/loader/ww-loader-01.gif"> -->
 </div>
 

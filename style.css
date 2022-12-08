@@ -29,3 +29,50 @@ h1.couple {
     font-size: 25px !important;
   }
 }
+
+.loader {
+  background-color: #e1d9c0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 99999999999;
+  margin-top: 0px;
+  top: 0px;
+}
+
+.btnn {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  width: 20;
+  /* height: 39px; */
+  margin-top: -40px;
+  margin-left: -120px;
+  font-size: 30px;
+  padding: 5px 45px;
+  border: 16px;
+  border-radius: 5px;
+  background: #1e74d2;
+  box-shadow: 0 0 0 0 #1e74d2;
+  animation: pulse-blue 2s infinite;
+  /* background-color: #1E74D2; */
+  /* border-radius: 50%; */
+  color: white;
+}
+
+@keyframes pulse-blue {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #1e74d1;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+  }
+}
